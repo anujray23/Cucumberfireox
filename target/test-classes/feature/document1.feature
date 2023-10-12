@@ -2,7 +2,7 @@ Feature: Document to test Amazon
 
   @amazon @uid
   Scenario: Amazon uid test
-    Given browser "chrome" opens and get website "https://www.amazon.in/" 
+    Given browser "firefox" opens and get website "https://www.amazon.in/" 
     And click signin 
     When I enter valid userid "23decanuj@gmail.com"
     And click continue button
@@ -17,7 +17,7 @@ Feature: Document to test Amazon
     
     @facebook @login
   Scenario Outline:
-  Given i open "chrome" and goto "https://www.facebook.com/"
+  Given i open "firefox" and goto "https://www.facebook.com/"
   When i enter userid <userid> and password <password>
   And click login button
   Then get message
